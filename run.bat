@@ -1,4 +1,4 @@
-dir /B *.java > sources.txt
+dir /s /B src\*.java > sources.txt
 javac @sources.txt
-java Main
+java -cp src Main
 pause
